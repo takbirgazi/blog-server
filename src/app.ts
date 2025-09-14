@@ -23,6 +23,7 @@ app.get("/", (_req, res) => {
   res.send("API is running");
 });
 
+app.use("/api/v1/auth", userRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/post", postRouter);
 
